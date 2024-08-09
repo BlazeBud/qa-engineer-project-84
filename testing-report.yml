@@ -1,21 +1,77 @@
 ---
 - summary: |
-    Проверка перехода в корзину через навигационную панель
+    Переход в каталог через навигационную панель
 status: pass
 
 - summary: |
-    Проверка перехода в каталог через лого
-status: fail
-
-- summary: |
-     Поиск товара по категории
+    Проверка фильтра товаров по бренду
 status: pass
 
 - summary: |
-    Проверка кросбраузерности сайта
+     Проверка фильтра товаров по цене
+status: pass
+
+- summary: |
+    Успешное добовление товара в корзину
 status: pass  
 
 - summary: |
-     Проверка адаптивности сайта для разных разных мобильных устройств
+     Удаление товара из корзины
+status: pass
+      
+- summary: |
+     Поиск товаров по фильтру "In Stock"
+status: pass
+
+- summary: |
+     Переключения языка сайта на Русский язык
+status: pass
+
+- summary: |
+      Ввод отрицательных чисел в поля цен товаров
 status: fail
+
+- summary: |
+     Просмотр дополнительных фото товаров
+status: fail
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
+
+- summary: |
+     
+status: 
 
