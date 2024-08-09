@@ -1,65 +1,54 @@
 ---
 - summary: |
      Не работает переход в каталог через лого
-environment: |
+  environment: |
      Яндекс Браузер   Версия 24.6.4.580 (Официальная сборка), (64-bit)
      ОС Windows 10
-steps-to-reproduce: |
+  steps-to-reproduce: |
      1. Открыть страницу https://hexlet-products-store.vercel.app/products/81
      2. Нажать на лого в навигационной панели сайта
-expected-result: |
+  expected-result: |
      Отображается страница каталога
-actual-result: |
+  actual-result: |
      Ничего не происходит
      
 - summary: |
      В ценовой диапазон можно вводить отрицательные значения
-environment: |
+  environment: |
      Яндекс Браузер   Версия 24.6.4.580 (Официальная сборка), (64-bit)
      ОС Windows 10
-steps-to-reproduce: |
+  steps-to-reproduce: |
      1. Открыть страницу https://hexlet-products-store.vercel.app/
      2. Вводим в значения "From - To" отрицательные значения
-expected-result: |
+  expected-result: |
      Поля ввода не должны принимать отрицательные значения
-actual-result: |
+  actual-result: |
      У пользователя есть возможность ввода отрицательных значений
 
 - summary: |
      Не работает переход по хэштегу с категорией на странице товара
-environment: |
+  environment: |
      Яндекс Браузер   Версия 24.6.4.580 (Официальная сборка), (64-bit)
      ОС Windows 10
-steps-to-reproduce: |
+  steps-to-reproduce: |
      1. Открыть страницу любого товара 
      2. Нажать на хэштег с категорией товара 
-expected-result: |
+  expected-result: |
      Успешный переход к списку товара через хэштег товара
-actual-result: |
+  actual-result: |
      Ничего не происходит
      
 - summary: |
      Нет возможности переключиться на дополнительные фото в карточке товара
-environment: |
+  environment: |
      Яндекс Браузер   Версия 24.6.4.580 (Официальная сборка), (64-bit)
      ОС Windows 10
-steps-to-reproduce: |
+  steps-to-reproduce: |
      1. Зайти на страницу сайта https://hexlet-products-store.vercel.app/
      2. Выбрать из каталога товар - Nike Air Jordan 1 Red And Black
      3. Зайти в карточку товара
      4. Кликнуть на дополнительном фото товара
-expected-result: |
+  expected-result: |
      Пользователь имеет возможность переключить фото с основного на дополнительное
-actual-result: |
+  actual-result: |
      Ничего не происходит
-
-- summary: |
-    
-environment: |
-    
-steps-to-reproduce: |
-    
-expected-result: |
-    
-actual-result: |
-       
