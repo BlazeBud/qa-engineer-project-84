@@ -8,6 +8,10 @@ status: pass
 status: pass
 
 - summary: |
+    Проверка перехода по хэштегу с категорией товара 
+status: fail
+
+- summary: |
      Проверка фильтра товаров по цене
 status: pass
 
