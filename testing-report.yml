@@ -1,45 +1,40 @@
 ---
 - summary: |
     Переход в каталог через навигационную панель
-status: pass
+  status: pass
 
 - summary: |
     Проверка фильтра товаров по бренду
-status: pass
+  status: pass
 
 - summary: |
     Проверка перехода по хэштегу с категорией товара 
-status: fail
+  status: fail
 
 - summary: |
      Проверка фильтра товаров по цене
-status: pass
+  status: pass
 
 - summary: |
     Успешное добовление товара в корзину
-status: pass  
+  status: pass  
 
 - summary: |
      Удаление товара из корзины
-status: pass
+  status: pass
       
 - summary: |
      Поиск товаров по фильтру "In Stock"
-status: pass
+  status: pass
 
 - summary: |
      Переключения языка сайта на Русский язык
-status: pass
+  status: pass
 
 - summary: |
       Ввод отрицательных чисел в поля цен товаров
-status: fail
+  status: fail
 
 - summary: |
      Просмотр дополнительных фото товаров
-status: fail
-
-- summary: |
-     
-status: 
-
+  status: fail
