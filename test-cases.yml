@@ -1,167 +1,167 @@
 ---
 - summary: |
     Переход в каталог через навигационную панель
-requirement: |
+  requirement: |
     Кнопка "Store" должна открывать каталог 
-prerequisites: |
+  prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Открыта страница Cart
-test-data: | 
+  test-data: | 
     нет 
-steps:
+  steps:
     - Нажимаем кнопку "Store"
-expected-result: |
+  expected-result: |
     Пользователь должен попасть на страницу с каталогом 
 
 - summary: |
      Проверка фильтра товаров по бренду
-requirement: |
+  requirement: |
      Пользователь должен иметь возможность фильтровать товары по бренду
-prerequisites: |
+  prerequisites: |
      - открыта страница сайта https://hexlet-products-store.vercel.app/
      - отображен каталог товаров
      - отображен список брендов
-test-data: |
+  test-data: |
      бренд - Dior
-steps:
+  steps:
      - Выбирается бренд из списка наименований
      - Обращаем внимание на отобразившийся товар
-expected-result: |
+  expected-result: |
      На странице  магазина  отображается товар, относящийся к выбранному бренду 
     
 - summary: |
     Поиск товаров по нескольким брендам
-requirement: |
+  requirement: |
     Выбор бренда в списке "Brand" должен выводить товары выбрранных производителей
-prerequisites: |
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-test-data: | 
+  test-data: | 
     No-data
-steps:
+  steps:
     - Выбрать из списка "Brand" три любых производителя
-expected-result: |
+  expected-result: |
     Должен быть выведен список товаров из трех выбранных прроизводителей
 
 - summary: |
     Переход по хэштегу с категорией на странице товара 
-requirement: |
+  requirement: |
     При нажатии на хэштег с категорией на странице товара должна открываться страница каталога с фильтрацией по данной категории
-prerequisites: |
+  prerequisites: |
     Открыта страница любого товара 
-test-data: | 
+  test-data: | 
     нет 
-steps:
+  steps:
     - нажимаем на хэштег с категорией товара 
-expected-result: |
+  expected-result: |
     Должна отобразиться страница каталога с фильтрацией по нажатой категории товара 
 
 - summary: |
      Проверка фильтра товаров по цене
-requirement: |
+  requirement: |
      Пользователь должен иметь возможность фильтровать товары по цене
-prerequisites: |
+  prerequisites: |
      - открыта страница сайта https://hexlet-products-store.vercel.app/
      - отображен каталог товаров
      - отображены два поля цен в диапазоне от 0 до 6577 
-test-data: |
+  test-data: |
      минимальная цена товара - 55
      максимальная цена товара - 155
-steps:
+  steps:
      - выставляется цена в поле минимального диапазона
      - выставляется цена в поле максимального диапазона
-expected-result: |
+  expected-result: |
      На странице  магазина  отображается товар, соответствующий выбранному диапазону цен
 
 - summary: |
      Успешное добовление товара в корзину
-requirement: |
+  requirement: |
      Пользователь должен иметь возможность добавлять товары в корзину
-prerequisites: |
+  prerequisites: |
      Открыта страница сайта https://hexlet-products-store.vercel.app/cart
      Отображен каталог товаров
-test-data: | 
+  test-data: | 
      Карточка товара - Kiwi
      Кнопка "Add to cart"
-steps:
+  steps:
      - Выбрать товар
      - Нажать кнопку "Add to cart"
      - Нажать кнопку в навигационной панели "Cart"
-expected-result: |
+  expected-result: |
       Выбранный товар добавлен и отображаеться корректно на страницы "Cart"
 
 - summary: |
       Удаление товара из корзины
-requirement: |
+  requirement: |
       Пользователь должен иметь возможность удалить товар из корзины
-prerequisites: |
+  prerequisites: |
       - открыта страница сайта https://hexlet-products-store.vercel.app/cart
       - в корзине магазина  размещен товар 
-test-data: |
+  test-data: |
       Товар - Kiwi
-steps:
+  steps:
     - Выбрать товар - Kiwi
     - Добавить  товар в корзину при помощи кнопки "Add to cart"
     - Нажать кнопку в навигационной панели "Cart"
     - Нажать на кнопку "Delete"
     - Обновить страницу
-expected-resul: |
+  expected-resul: |
     Товар удаляеться из корзины
     
 - summary: |
     Поиск товаров по фильтру "In Stock"
-requirement: |
+  requirement: |
     Активация чекбокса "In Stock" должна выводить только товары в наличии
-prerequisites: |
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-test-data: | 
+  test-data: | 
     нет 
-steps:
+  steps:
     - Устанавливаем флажек в чекбокс "In Stock"
-expected-result: |
+  expected-result: |
     Должен быть выведены товары которые есть в наличии
 
 - summary: |
     Переключения языка сайта на Русский язык 
-requirement: |
+  requirement: |
     Сайт должен иметь возможность переключения языка между английским и русским
-prerequisites: |
+  prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Текущий язык выбран английский
-test-data: | 
+  test-data: | 
     нет 
-steps:
+  steps:
     - нажимаем в навигационной панели на выпадающее меню "Language" в верхнем правом углу шапки сайта 
     - выбираем язык "Russian" 
-expected-result: |
+  expected-result: |
     Интерфейс сайта и все текстовые элементы, кроме названий, должны перевестись на Русский язык
     
 - summary: |
      Ввод отрицательных чисел в поля цен товаров
-requirement: |
+  requirement: |
      В полях  ввода цен нельзя ввести  отрицательные значения
-prerequisites: |
+  prerequisites: |
      - открыта страница сайта https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
       No data
-steps:
+  steps:
      - Выбрать поле  минимальной цены товара 
      - Ввести вручную в поле  отрицательное число
      - Выбрать поле максимальной цены товара 
      - Ввести вручную в поле отрицательное число
-expected-result: |
+  expected-result: |
       - При вводе чисел в поля  цен нельзя ввести отрицательные значения
 
 - summary: |
      Просмотр дополнительных фото товаров
-requirement: |
+  requirement: |
      Можно переключиться на дополнительные фото товаров и подробнее просмотреть их
-prerequisites: |
+  prerequisites: |
      - открыта страница сайта https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
      карточка товара - Nike Air Jordan 1 Red And Black
-steps:
+  steps:
      - Выбрать из каталога товар
      - Зайти в карточку товара
      - Кликнуть на дополнительное фото товара
-expected-result: |
+  expected-result: |
      Нельзя переключиться с основного на дополнительное фото для дополнительного просмотра      
