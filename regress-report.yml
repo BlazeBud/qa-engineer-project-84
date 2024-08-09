@@ -2,74 +2,71 @@
 test-cases:
   - summary: |
       Поиск товара по ключевому слову 
-  status: fail
+    status: fail
 
   - summary: |
     Переход в каталог через навигационную панель
-  status: pass
+    status: pass
 
   - summary: |
     Проверка фильтра товаров по бренду
-  status: pass
+    status: pass
 
   - summary: |
     Проверка перехода по хэштегу с категорией товара 
-  status: pass
+    status: pass
 
   - summary: |
      Проверка фильтра товаров по цене
-  status: fail
+    status: fail
 
   - summary: |
     Успешное добовление товара в корзину
-  status: pass  
+    status: pass  
 
   - summary: |
      Удаление товара из корзины
-  status: pass
+    status: pass
       
   - summary: |
      Поиск товаров по фильтру "In Stock"
-  status: fail
+    status: fail
 
   - summary: |
      Переключения языка сайта на Русский язык
-  status: pass
+    status: pass
 
   - summary: |
       Ввод отрицательных чисел в поля цен товаров
-  status: fail
+    status: fail
 
   - summary: |
      Просмотр дополнительных фото товаров
-  status: pass
+    status: pass
 
 bugreports: 
   - summary: |
      Не работает поиск товара по ключевому слову
-  environment: |
+    environment: |
      Яндекс Браузер   Версия 24.6.4.580 (Официальная сборка), (64-bit)
      ОС Windows 10
-  steps-to-reproduce: |   
+    steps-to-reproduce: |   
      1. Зайти на страницу сайта https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
      2. Набрать в поле поиска любое ключевое слово
-  expected-result: |
+    expected-result: |
      На странице сайта отображаются товары, содержащие в названии или описании ключевое слово
-  actual-result: |
+    actual-result: |
      Отображаются все товары, находящиеся на открытой странице
      
   - summary: |
      Ломается панель пагинации при отключении чекбокса "В наличии"
-  environment: |
+    environment: |
      Яндекс Браузер   Версия 24.6.4.580 (Официальная сборка), (64-bit)
      ОС Windows 10
-  steps-to-reproduce: |
+    steps-to-reproduce: |
      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
      2. Отключить чекбокс "В наличии" 
-  expected-re: |
+    expected-re: |
      Панель пагинации должна остаться на месте
-  actual-result: |
+    actual-result: |
      Панель пагинации исчезает
-
-     
-     
