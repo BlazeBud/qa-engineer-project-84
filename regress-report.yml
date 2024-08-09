@@ -66,7 +66,7 @@ bugreports:
     steps-to-reproduce: |
      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
      2. Отключить чекбокс "In Stock" 
-    expected-re: |
+    expected-result: |
      Панель пагинации должна остаться на месте
     actual-result: |
      Панель пагинации исчезает
